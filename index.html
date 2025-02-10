@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="aaaa.css">
+</head>
+<body>
+    <div class="container">
+        <h2> WHEEZAL BMI Calculator</h2>
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter weight" required>
+        
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter height" required>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name" required>
+        
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        
+        <p id="result"></p>
+        
+        <button id="adviceBtn" onclick="getAdvice()" style="display: none;">Get Advice</button>
+        
+        <p id="advice"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
